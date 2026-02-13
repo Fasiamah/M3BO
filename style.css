@@ -1,0 +1,57 @@
+:root {
+  --head-bg: #ffffff;
+  --main-bg: #d0cfcf;
+  --footer-bg: black;
+  --button-bg: blue;
+  --text-col: black;
+}
+
+
+header {
+  background-color: var(--head-bg);
+  height: 80px;
+  font-family: Arial, Helvetica, sans-serif;
+  align-items: center;
+}
+
+
+main{
+    height: 500vh;
+    background-color: var(--main-bg);
+}
+
+main img{
+    width: 100%;
+    
+}
+
+footer{
+    height: 100px;
+    background-color: var(--footer-bg);
+}
+
+.header1{
+    size: 10px;
+}
+
+.nav{
+    display: flex;
+    gap: 50px;
+    text-align: center;
+    
+    justify-content: center;
+    font-size: larger;
+    
+}
+
+a{
+   
+    text-decoration: none;
+    color: var(--text-col);
+    align-items: center;
+}
+
+.logo{
+    height: 1px;
+    width: 500px;
+}
