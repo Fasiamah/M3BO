@@ -7,6 +7,8 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
+    <script src="filter.js"></script>
+    <script src="search.js"></script>
 </head>
 
 <body>
@@ -21,7 +23,7 @@
             placeholder="Search for products.." title="Type in a name">
             
             
-            <!--<a href="Shoppingcart.html" class="ShopCart"><img src="Image/cart.svg" alt=""></a>-->
+            <a href="Shoppingcart.html" class="ShopCart"><img src="Image/cart.svg" alt="">winkelwagen</a>
 
         </nav>
         <section class="korting">Gebruik code:'givemehead' voor 20% korting op je eerste koptelefoon. </section>
@@ -29,18 +31,19 @@
 
 
     <br>
-    <!-- The dots/circles -->
-    <div style="text-align:center" class="products-container">
-        
-        <div>
-            <span class="dot" onclick="currentSlide(1)"></span>
-            <span class="dot" onclick="currentSlide(2)"></span>
-            <span class="dot" onclick="currentSlide(3)"></span>
-        </div>
 
-        <section class="OnzeProducts">Onze Producten</section>
+    <div style="text-align:center" class="products-container">
+<section class="OnzeProducts2">Onze Producten</section>
+    <div id="myBtnContainer">
+        <button class="btn active" onclick="filterSelection('all')"> all</button>
+        <button class="btn" onclick="filterSelection('spacialAudio')"> Spacial Audio</button>
+        <button class="btn" onclick="filterSelection('gaming')"> Gaming</button>
+        <button class="btn" onclick="filterSelection('highEnd')"> High end</button>
+        <button class="btn" onclick="filterSelection('budget')"> budget</button>
+    </div>
+
         <section class="products">
-            <article class="product">
+            <article class="product" data-categorie="all gaming">
                 <a href="hyperxcloudalpha.html">
                 <img class="product-img" src="Image/hyperx-cloud-alpha-wireless-gaming-headset-zwart-rood.jpg" alt="">
                 <h3 class="product-title">HyperX Cloud Alpha</h3>
@@ -48,46 +51,46 @@
             </a>
                 <button class="product-button">Koop Nu!</button>
             </article>
-            <article class="product">
+            <article class="product" data-categorie="all gaming">
                 <img class="product-img" src="Image/beyerdynamic-mmx-200-wireless-headphone-front.jpg" alt="">
                 <h3 class="product-title">Beyer Dynamic mmx 200</h3>
                 <div class="product-price">45,00</div>
                 <button class="product-button">Koop Nu!</button>
             </article>
-            <article class="product">
+            <article class="product" data-categorie="all spacialAudio highEnd">
                 <img class="product-img" src="Image/shopping.jpeg" alt="">
                 <h3 class="product-title">Apple Airpods Max</h3>
-                <div class="product-price">450,00</div>
+                <div class="product-price">449,99</div>
                 <button class="product-button">Koop Nu!</button>
             </article>
-            <article class="product">
+            <article class="product" data-categorie="all budget">
                 <img class="product-img" src="Image/Rkop-em-koptelefoon.png" alt="">
                 <h3 class="product-title">Rkop Potato headset 2</h3>
                 <div class="product-price">5,00</div>
                 <button class="product-button">Koop Nu!</button>
             </article>
-            <article class="product">
-                <img class="product-img" src="Image/hyperx-cloud-alpha-wireless-gaming-headset-zwart-rood.jpg" alt="">
-                <h3 class="product-title">HyperX Cloud Alpha</h3>
-                <div class="product-price">45,00</div>
+            <article class="product" data-categorie="all spacialAudio">
+                <img class="product-img" src="Image/Unknown.jpeg" alt="">
+                <h3 class="product-title">MegaX Headset 67x</h3>
+                <div class="product-price">49,99</div>
                 <button class="product-button">Koop Nu!</button>
             </article>
-            <article class="product">
-                <img class="product-img" src="Image/beyerdynamic-mmx-200-wireless-headphone-front.jpg" alt="">
-                <h3 class="product-title">Beyer Dynamic mmx 200</h3>
-                <div class="product-price">45,00</div>
+            <article class="product" data-categorie="all spacialAudio">
+                <img class="product-img" src="Image/shopping-2.jpeg" alt="">
+                <h3 class="product-title">Idk Bro's 5 spacial audio</h3>
+                <div class="product-price">49,99</div>
                 <button class="product-button">Koop Nu!</button>
             </article>
-            <article class="product">
-                <img class="product-img" src="Image/shopping.jpeg" alt="">
-                <h3 class="product-title">Apple Airpods Max</h3>
-                <div class="product-price">450,00</div>
+            <article class="product" data-categorie="all spacialAudio highEnd">
+                <img class="product-img" src="Image/shopping-3.jpeg" alt="">
+                <h3 class="product-title">Sony Maximus Reds 3</h3>
+                <div class="product-price">140,00</div>
                 <button class="product-button">Koop Nu!</button>
             </article>
-            <article class="product">
-                <img class="product-img" src="Image/Rkop-em-koptelefoon.png" alt="">
-                <h3 class="product-title">Rkop Potato headset 2</h3>
-                <div class="product-price">5,00</div>
+            <article class="product" data-categorie="all budget gaming">
+                <img class="product-img" src="Image/shopping-1.jpeg" alt="">
+                <h3 class="product-title">Action Gaming Headset</h3>
+                <div class="product-price">12,99</div>
                 <button class="product-button">Koop Nu!</button>
             </article>
         </section>
