@@ -1,0 +1,439 @@
+:root {
+  --head-bg: #ffffff;
+  --main-bg: #d0cfcf;
+  --footer-bg: black;
+  --button-bg: rgb(0, 0, 255);
+  --text-col: black;
+}
+.logoHead{
+    border-radius: 100px;
+}
+
+.top{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: xx-large;
+    background-color: var(--button-bg);
+    color: white;
+    padding-bottom: 30px;
+}
+
+.top-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: xx-large;
+    background-color: var(--button-bg);
+    color: white;
+    padding-bottom: 30px;
+}
+
+.top-img{
+    height: 10%;
+    display: flex;
+    position: absolute;
+    top: 20px;
+    left: 5%;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+  background-color: var(--head-bg);
+  height: 80px;
+  align-items: center;
+}
+
+.cartContainer{
+    display: flex;
+    flex-direction: row;
+}
+.ShopCart{
+  height: 1px;
+  margin-bottom: 10px;
+}
+
+.ShopCart img{
+    height: 40px;
+    bottom: 50px;
+}
+
+.product-amount{
+    display: flex;
+    background-color: red;
+    width: 30px;
+    height: 30px;
+    color: white;
+    border-radius: 50px;
+    align-items: center;
+    justify-content: center;
+}
+
+.zoek{
+height: 20px;
+padding: 10px, 20px;
+background-color: rgb(255, 255, 255);
+}
+
+.korting{
+    height: 20px;
+    background-color: yellow;
+    text-align: center;
+}
+
+
+.cta{
+    
+    height: 500px;
+    background-color: var(--main-bg);
+    position: relative;
+}
+
+.cta-img{
+    width: 100%;
+    height: 100%;
+    /*als de image smushed is, gebruik dit*/
+    object-fit: cover;
+    background-attachment: fixed;
+    
+}
+
+/* zodat de text groter wordt waneer je hovert*/
+/*.cta-img:hover{
+    width: 103%;
+    height: 103%;
+    
+}*/
+
+.cta-text{
+    position: absolute;
+    bottom: 200px;
+    left: 10%;
+    color: var(--text-col);
+    font-size: 50px;
+    color: #ffffff;
+    text-shadow: 1px 2px black;
+}
+
+.cta-button{
+    background-color: var(--button-bg);
+    height: 50px;
+    width: 200px;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+   position: absolute;
+    bottom: 100px;
+    left: 10%;
+    color: #ffffff;
+    border-radius: 20px;
+    border: none;
+    
+    
+}
+
+.cta-button:hover{
+    cursor: pointer;
+    transform: translateY(2px);
+    color: var(--button-bg);
+    background-color: #ffffff;
+}
+
+.cta-button:active{
+    background-color: #717171;
+    transform: translateY(4px);
+    color: white;
+}
+
+footer{
+    bottom: 0px;height: 100px;
+    background-color: var(--footer-bg);
+    color: white;
+}
+
+.footer{
+    color: white;
+}
+
+.header1{
+    size: 10px;
+}
+
+.nav{
+    display: flex;
+    gap: 50px;
+    text-align: center;
+    justify-content: center;
+    font-size: larger;
+}
+
+a{
+   color: black;
+   text-decoration: none;
+    
+}
+
+.email{
+    color: rgb(165, 165, 165);
+    text-decoration: dashed;
+}
+
+.logo{
+    height: 1px;
+    width: 500px;
+}
+
+.products{
+    padding: 20px;
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    border-radius: 20px;
+    background-color: #ffffff;
+    flex-wrap: wrap;
+    width: 70%;
+    
+    
+}
+
+.products-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.product{
+    width: 200px;
+    background-color: #ffffff;
+    padding: 20px 20px;
+    border-radius: 30px;
+}
+.product-button{
+  height: 5vh;
+    width: 20vh;
+    background-color: var(--button-bg);
+    border: none;
+    border-radius: 10px;
+    color: #ffffff;
+
+}
+.product-button:hover{
+    cursor: pointer;
+    transform: translateY(2px);
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    /*filter: blur(1px);*/
+}
+.product:hover{
+    cursor: pointer;
+    transform: translateY(2px);
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 157);
+    /*filter: blur(1px);*/  
+    
+}
+.product-img{
+    width: 100%;
+    height: 50%;
+    border-radius: 20px;
+}
+
+.OnzeProducts{
+    text-align: center;
+}
+
+footer{
+    width: 100%;
+    color: white;
+    text-decoration: none;
+}
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.kopkoop-button{
+    background-color: rgb(78, 86, 177);
+    height: 50px;
+    width: 200px;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+   position: absolute;
+    bottom: 100px;
+    left: 70%;
+    color: #ffffff;
+    border-radius: 20px;
+    
+    
+}
+.kopkoop-img{
+    width: 30%;
+    height: 30%;
+    /*als de image smushed is, gebruik dit*/
+    /*object-fit: cover;*/
+    
+}
+.kopkoop{
+    
+    height: 600px;
+    background-color: var(--main-bg);
+    position: relative;
+}
+.kopkoop-text{
+    position: absolute;
+    bottom: 200px;
+    left: 70%;
+    color: var(--text-col);
+    font-size: 50px;
+    color: #ffffff;
+    text-shadow: 1px 2px black;
+}
+
+.meer{
+    background-color: var(--button-bg);
+    height: 50px;
+    width: 200px;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    left: 10%;
+    color: #ffffff;
+    border-radius: 20px;
+    border: none;
+    margin-bottom: 40px;
+    
+}
+
+.meer:hover{
+    cursor: pointer;
+    transform: translateY(2px);
+    color: white;
+    background-color: #656565;
+}
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+.OnzeProducts2{
+    height: 50px;
+    width: 100%;
+    background-color: var(--button-bg);
+    color: #ffffff;
+    justify-content: center;
+}
+
+.btn{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    height: 5vh;
+    width: 20vh;
+    background-color: var(--button-bg) ;
+    border: none;
+    border-radius: 10px;
+    color: #ffffff;
+    
+}
+
+.btn:hover{
+    background-color: rgb(63, 63, 255);
+}
+
+.btn:active{
+    background-color: #656565;
+}
+
+
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 5px}
+}
+
+@media (max-width: 854px) {
+.nav {
+flex-wrap: wrap;
+gap: 5px;
+
+}
+
+.korting{
+    font-size: 10px;
+}
+
+}

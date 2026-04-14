@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>producten</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="filter.js" defer></script>
+    <script src="search.js" defer></script>
+</head>
+    <div class="top"></div>
+        <a href="index.html"><img class="top-img" src="Image/!!Logo1.png" alt=""></a>
+        <div class="top-text">123Heads</div>
+    </div>
+<body>
+    <header>
+        <!--<div class="logo"><img src="Image/!Logo.png" alt=""></div>-->
+        <nav class="nav">
+            <a href="index.html" class="homebutton">Home</a>
+            <a href="koptelefoon.html" class="KoptelButton">Koptelefoons</a>
+            <a href="producten.html" class="oorButton">Oorstukjes</a>
+            <a href="producten.html" class="speakButton">Speakers</a>
+             <input type="text" class="zoek" id="zoek" onkeyup="myFunction()"
+            placeholder="Search for products.." title="Type in a name">
+            
+            
+            <div class="cartContainer">
+                <a href="cart.html" class="ShopCart"><img src="Image/cart.svg" alt=""></a>
+            </div>
+
+        </nav>
+        <section class="korting">Gebruik code:'givemehead' voor 20% korting op je eerste koptelefoon. </section>
+    </header>
+
+
+    <br>
+
+    <div style="text-align:center" class="products-container">
+<section class="OnzeProducts2">Onze Producten</section>
+    <div id="myBtnContainer">
+        <button class="btn active" onclick="filterSelection('all')"> all</button>
+        <button class="btn" onclick="filterSelection('spacialAudio')"> Spacial Audio</button>
+        <button class="btn" onclick="filterSelection('gaming')"> Gaming</button>
+        <button class="btn" onclick="filterSelection('highEnd')"> High end</button>
+        <button class="btn" onclick="filterSelection('budget')"> budget</button>
+    </div>
+
+        <section class="products">
+            <article class="product" data-categorie="all gaming">
+                <img class="product-img" src="Image/hyperx-cloud-alpha-wireless-gaming-headset-zwart-rood.jpg" alt="">
+                <h3 class="product-title">HyperX Cloud Alpha</h3>
+                <div class="product-price">45,00</div>
+                <button class="product-button">Koop Nu!</button>
+            </article>
+            <article class="product" data-categorie="all gaming">
+                <img class="product-img" src="Image/beyerdynamic-mmx-200-wireless-headphone-front.jpg" alt="">
+                <h3 class="product-title">Beyer Dynamic mmx 200</h3>
+                <div class="product-price">45,00</div>
+                <button class="product-button">Koop Nu!</button>
+            </article>
+            <article class="product" data-categorie="all spacialAudio highEnd">
+                <img class="product-img" src="Image/shopping.jpeg" alt="">
+                <h3 class="product-title">Apple Airpods Max</h3>
+                <div class="product-price">449,99</div>
+                <button class="product-button">Koop Nu!</button>
+            </article>
+            <article class="product" data-categorie="all budget">
+                <img class="product-img" src="Image/Rkop-em-koptelefoon.png" alt="">
+                <h3 class="product-title">Rkop Potato headset 2</h3>
+                <div class="product-price">5,00</div>
+                <button class="product-button">Koop Nu!</button>
+            </article>
+            <article class="product" data-categorie="all spacialAudio">
+                <img class="product-img" src="Image/Unknown.jpeg" alt="">
+                <h3 class="product-title">MegaX Headset 67x</h3>
+                <div class="product-price">49,99</div>
+                <button class="product-button">Koop Nu!</button>
+            </article>
+            <article class="product" data-categorie="all spacialAudio">
+                <img class="product-img" src="Image/shopping-2.jpeg" alt="">
+                <h3 class="product-title">Idk Bro's 5 spacial audio</h3>
+                <div class="product-price">49,99</div>
+                <button class="product-button">Koop Nu!</button>
+            </article>
+            <article class="product" data-categorie="all spacialAudio highEnd">
+                <img class="product-img" src="Image/shopping-3.jpeg" alt="">
+                <h3 class="product-title">Sony Maximus Reds 3</h3>
+                <div class="product-price">140,00</div>
+                <button class="product-button">Koop Nu!</button>
+            </article>
+            <article class="product" data-categorie="all budget gaming">
+                <img class="product-img" src="Image/shopping-1.jpeg" alt="">
+                <h3 class="product-title">Action Gaming Headset</h3>
+                <div class="product-price">12,99</div>
+                <button class="product-button">Koop Nu!</button>
+            </article>
+        </section>
+</body>
+<footer>
+    ©2026 Frank Asiamah. <a class="email" href="mailto:frankasiamah2008@gmail.com">frankasiamah2008@gmail.com</a> 
+</footer>
+
+</html>
+
+<!-- your comment here -->
